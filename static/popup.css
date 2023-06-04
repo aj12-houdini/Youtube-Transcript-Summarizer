@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Montserrat&family=Prosto+One&family=Reggae+One&family=Roboto+Condensed&display=swap');
+
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  width: 300px;
+}
+
+nav{
+  text-align: center;
+}
+
+.wrap{
+  padding: 20px;
+  background-color: #F9F5F6;
+  height: 100%;
+  color: #62CDFF;
+}
+
+h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+button{
+  background-color: #2F58CD;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  color: #ffff;
+  font-size: 1rem;
+  transition: 0.3s background-color ease;
+}
+button:hover{
+  background-color: aliceblue;
+  transition: 0.3s background-color ease;
+}
+
+.text{
+  margin: 20px 0;
+  text-align: justify;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.loader{
+  display: none;
+}
+
+.active{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+
+.spinner{
+  border: 2px solid black;
+  border-top: 2px solid red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.text-summarized{
+  white-space: initial;
+  animation: typing 2s steps(40);
+}
+@keyframes typing{
+  from {
+    width: 0;
+  }
+
+  to{
+    width: 100%;
+  }
+}
